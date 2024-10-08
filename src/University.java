@@ -4,7 +4,7 @@ public class University {
         int count = 0;
         for(int i=0;i<grades.length;i++)
         {
-            if(grades[i] > 100 && grades[i] < 0)
+            if(grades[i] > 100 || grades[i] < 0)
                 throw new IllegalAccessException("incompatible grade");
             else if(grades[i] < 40)
                 count++;
