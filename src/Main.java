@@ -11,6 +11,13 @@ public class Main {
         System.out.println();
         System.out.print("Durchschnitt:");
         System.out.println(University.average(grades));
+        System.out.println();
+        System.out.println("abgerundete Noten:");
+        int[] roundedGrades = University.roundGrades(grades);
+        for(int i=0;i < roundedGrades.length;i++) {
+            System.out.print(roundedGrades[i] + " ");
+        }
+        System.out.println();
     }
 }
 

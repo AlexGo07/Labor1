@@ -28,7 +28,19 @@ public class University {
     }
     //3.
     public static int[] roundGrades(int[] grades){
-
+        int[] roundGrades = new int[grades.length];
+        for(int i=0;i<grades.length;i++)
+        {
+            int grade = grades[i];
+            if(grade >= 38)
+            {
+                int next = ((grade/5)+1)*5;
+                if(next - grade < 3)
+                    grade = next;
+            }
+            roundGrades[i] = grade;
+        }
+        return roundGrades;
     }
 
 }
