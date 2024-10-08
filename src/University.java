@@ -18,4 +18,14 @@ public class University {
         return badGrades;
     }
     //2.
+    public static double average(int[] grades) throws IllegalAccessException {
+        int sum = 0;
+        for(int i=0;i<grades.length;i++)
+        {
+            sum += grades[i];
+        }
+        return Math.round(((double) sum / grades.length) * 100.0) / 100.0;
+    }
+    //3.
+
 }
