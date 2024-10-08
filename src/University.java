@@ -27,5 +27,8 @@ public class University {
         return Math.round(((double) sum / grades.length) * 100.0) / 100.0;
     }
     //3.
+    public static int[] roundGrades(int[] grades){
+
+    }
 
 }
