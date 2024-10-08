@@ -42,5 +42,16 @@ public class University {
         }
         return roundGrades;
     }
-
+    //4.
+    public static int maxRounded(int[] grades)
+    {
+        int[] roundedGrades = roundGrades(grades);
+        int max = roundedGrades[0];
+        for(int i=1;i<roundedGrades.length;i++)
+        {
+            if(roundedGrades[i] > max)
+                max = roundedGrades[i];
+        }
+        return max;
+    }
 }
