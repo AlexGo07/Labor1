@@ -26,6 +26,14 @@ public class Main {
         System.out.println("Minim: " + Numbers.minimal(array));
         System.out.println("Maximale Sume: " + Numbers.sumMin(array));
         System.out.println("Minimale Sume: " + Numbers.sumMax(array));
+        System.out.println();
+        System.out.println("Aufgabe 3");
+        int[] firstNumber = {1, 3, 0, 0, 0, 0, 0, 0, 0};
+        int[] secondNumber = {8, 7, 0, 0, 0, 0, 0, 0, 0};
+        int[] sumNumbers = Big.sume(firstNumber,secondNumber);
+        for(int i=0;i < sumNumbers.length;i++) {
+            System.out.print(sumNumbers[i] + " ");
+        };
     }
 }
 
