@@ -5,16 +5,16 @@ public class Main {
         int[] badGrades = University.insufficient(grades);
         System.out.println("AUFGABE 1");
         System.out.print("Nicht ausreichende Noten: ");
-        for(int i=0;i < badGrades.length;i++) {
-            System.out.print(badGrades[i] + " ");
+        for (int badGrade : badGrades) {
+            System.out.print(badGrade + " ");
         }
         System.out.println();
         System.out.print("Durchschnitt: ");
         System.out.println(University.average(grades));
         System.out.print("abgerundete Noten: ");
         int[] roundedGrades = University.roundGrades(grades);
-        for(int i=0;i < roundedGrades.length;i++) {
-            System.out.print(roundedGrades[i] + " ");
+        for (int roundedGrade : roundedGrades) {
+            System.out.print(roundedGrade + " ");
         }
         System.out.println();
         System.out.print("Die hochste Note nach Aufrundung: ");
@@ -30,24 +30,24 @@ public class Main {
         System.out.println("Aufgabe 3");
         int[] firstNumber = {1, 3, 0, 0, 0, 0, 0, 0, 0};
         int[] secondNumber = {8, 7, 0, 0, 0, 0, 0, 0, 0};
-        int[] sumNumbers = Big.sume(firstNumber,secondNumber);
+        int[] sumNumbers = Big.sum(firstNumber,secondNumber);
         System.out.print("Die Summe: ");
-        for(int i=0;i < sumNumbers.length;i++) {
-            System.out.print(sumNumbers[i] + " ");
-        };
+        for (int sumNumber : sumNumbers) {
+            System.out.print(sumNumber + " ");
+        }
         System.out.println();
         System.out.print("Differenz: ");
         int[] firstNumber1 = {8, 3, 0, 0, 0, 0, 0, 0, 0};
         int[] secondNumber1 = {5, 4, 0, 0, 0, 0, 0, 0, 0};
-        int[] diffNumbers = Big.differenz(firstNumber1,secondNumber1);
-        for(int i=0;i < diffNumbers.length;i++) {
-            System.out.print(diffNumbers[i] + " ");
+        int[] diffNumbers = Big.difference(firstNumber1,secondNumber1);
+        for (int diffNumber : diffNumbers) {
+            System.out.print(diffNumber + " ");
         }
         System.out.println();
         System.out.print("Multiplikation: ");
         int[] number = {2, 3, 6, 0, 0, 0, 0, 0, 0};
         int multiplier = 2;
-        int[] multipliedNumbers = Big.multiplikation(number,multiplier);
+        int[] multipliedNumbers = Big.multiplication(number,multiplier);
         for(int i=0;i < number.length;i++) {
             System.out.print(multipliedNumbers[i] + " ");
         }
@@ -55,15 +55,15 @@ public class Main {
         int divisor = 2;
         System.out.print("Division: ");
         int[] dividedNumbers = Big.division(number,divisor);
-        for(int i=0;i < dividedNumbers.length;i++) {
-            System.out.print(dividedNumbers[i] + " ");
+        for (int dividedNumber : dividedNumbers) {
+            System.out.print(dividedNumber + " ");
         }
         System.out.println();
         System.out.println();
         System.out.println("Aufgabe 4");
         int[] keybords = {40, 35, 70, 15, 45};
         System.out.print("Die billigste Tastatur ist: ");
-        System.out.println(Shop.chepest(keybords));
+        System.out.println(Shop.cheapest(keybords));
         System.out.print("Das teuerste Gegenstand: ");
         int[] usb = {20,15,40,15};
         System.out.println(Shop.mostExpensiveThing(keybords,usb));
