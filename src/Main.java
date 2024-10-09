@@ -44,6 +44,13 @@ public class Main {
             System.out.print(diffNumbers[i] + " ");
         }
         System.out.println();
+        System.out.print("Multiplikation: ");
+        int[] number = {2, 3, 6, 0, 0, 0, 0, 0, 0};
+        int multiplier = 2;
+        int[] multipliedNumbers = Big.multiplikation(number,multiplier);
+        for(int i=0;i < number.length;i++) {
+            System.out.print(multipliedNumbers[i] + " ");
+        }
     }
 }
 

@@ -43,4 +43,24 @@ public class Big {
         }
         return diff;
     }
+
+    public static int[] multiplikation(int[] number, int multiplier) {
+        int[] mult = new int[number.length + 1];
+        int carry = 0;
+        for (int i = number.length - 1; i >= 0; i--) {
+            int initialMult = number[i] * multiplier + carry;
+                carry = initialMult / 10;
+                mult[i + 1] = initialMult % 10;
+            }
+        mult[0] = carry;
+        if (carry == 0) {
+            int[] newResult = new int[mult.length - 1];
+            for (int i = 1; i < mult.length; i++) {
+                newResult[i - 1] = mult[i];
+            }
+            return newResult;
+        }
+
+        return mult;
+    }
 }
