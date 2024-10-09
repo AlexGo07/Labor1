@@ -67,6 +67,11 @@ public class Main {
         System.out.print("Das teuerste Gegenstand: ");
         int[] usb = {20,15,40,15};
         System.out.println(Shop.mostExpensiveThing(keybords,usb));
+        int[] Preise = {15,45,20};
+        int budget = 30;
+        System.out.print("Teuerste Usb < Budget: ");
+        System.out.println(Shop.mostExpensiveWithinBudget(Preise,budget));
+        System.out.println();
     }
 }
 
