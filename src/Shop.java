@@ -32,4 +32,17 @@ public class Shop {
         }
         return max;
     }
+    public static int maximalSum(int budget, int[] keyboardPrices, int[] usbDevice)
+    {
+        int sum;
+        int max = -1;
+        for(int i = 1; i < keyboardPrices.length; i++)
+            for(int j = 0; j < usbDevice.length; j++)
+            {
+                sum = keyboardPrices[i] + usbDevice[j];
+                if(sum > max && sum <= budget)
+                    max = sum;
+            }
+        return max;
+    }
 }
