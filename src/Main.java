@@ -51,6 +51,14 @@ public class Main {
         for(int i=0;i < number.length;i++) {
             System.out.print(multipliedNumbers[i] + " ");
         }
+        System.out.println();
+        int divisor = 2;
+        System.out.print("Division: ");
+        int[] dividedNumbers = Big.division(number,divisor);
+        for(int i=0;i < dividedNumbers.length;i++) {
+            System.out.print(dividedNumbers[i] + " ");
+        }
+        System.out.println();
     }
 }
 

@@ -63,4 +63,21 @@ public class Big {
 
         return mult;
     }
+    public static int[] division(int[] number, int divisor) {
+        int[] division = new int[number.length];
+        int remainder = 0;
+        for (int i = 0; i < number.length; i++) {
+            int initialDivisor = remainder * 10 + number[i];
+            division[i] = initialDivisor / divisor;
+            remainder = initialDivisor % divisor;
+        }
+        if (division[0] == 0) {
+            int[] newResult = new int[division.length - 1];
+            for (int i = 1; i < division.length; i++) {
+                newResult[i - 1] = division[i];
+            }
+            return newResult;
+        }
+        return division;
+    }
 }
