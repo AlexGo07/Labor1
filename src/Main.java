@@ -31,9 +31,19 @@ public class Main {
         int[] firstNumber = {1, 3, 0, 0, 0, 0, 0, 0, 0};
         int[] secondNumber = {8, 7, 0, 0, 0, 0, 0, 0, 0};
         int[] sumNumbers = Big.sume(firstNumber,secondNumber);
+        System.out.print("Die Summe: ");
         for(int i=0;i < sumNumbers.length;i++) {
             System.out.print(sumNumbers[i] + " ");
         };
+        System.out.println();
+        System.out.print("Differenz: ");
+        int[] firstNumber1 = {8, 3, 0, 0, 0, 0, 0, 0, 0};
+        int[] secondNumber1 = {5, 4, 0, 0, 0, 0, 0, 0, 0};
+        int[] diffNumbers = Big.differenz(firstNumber1,secondNumber1);
+        for(int i=0;i < diffNumbers.length;i++) {
+            System.out.print(diffNumbers[i] + " ");
+        }
+        System.out.println();
     }
 }
 
