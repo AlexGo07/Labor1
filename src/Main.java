@@ -59,6 +59,14 @@ public class Main {
             System.out.print(dividedNumbers[i] + " ");
         }
         System.out.println();
+        System.out.println();
+        System.out.println("Aufgabe 4");
+        int[] keybords = {40, 35, 70, 15, 45};
+        System.out.print("Die billigste Tastatur ist: ");
+        System.out.println(Shop.chepest(keybords));
+        System.out.print("Das teuerste Gegenstand: ");
+        int[] usb = {20,15,40,15};
+        System.out.println(Shop.mostExpensiveThing(keybords,usb));
     }
 }
 
