@@ -1,5 +1,5 @@
 public class Shop {
-    public static int chepest(int[] keyboardPrices)
+    public static int cheapest(int[] keyboardPrices)
     {
         int min = keyboardPrices[0];
         for(int i = 1; i < keyboardPrices.length - 1; i++)

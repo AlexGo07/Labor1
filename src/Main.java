@@ -71,7 +71,6 @@ public class Main {
         int budget = 30;
         System.out.print("Teuerste Usb < Budget: ");
         System.out.println(Shop.mostExpensiveWithinBudget(Preise,budget));
-        System.out.println();
         int budget1 = 40;
         System.out.print("maximalen Geldbetrag: ");
         System.out.println(Shop.maximalSum(budget1,keybords,usb));

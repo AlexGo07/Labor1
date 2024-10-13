@@ -1,5 +1,5 @@
 public class Big {
-    public static int[] sume(int[] firstNumber, int[] secondNumber) {
+    public static int[] sum(int[] firstNumber, int[] secondNumber) {
         int[] sum = new int[firstNumber.length + 1];
         int carry = 0;
         for (int i = firstNumber.length - 1; i >= 0; i--) {
@@ -26,9 +26,9 @@ public class Big {
         return true;
     }
 
-    public static int[] differenz(int[] firstNumber, int[] secondNumber) {
+    public static int[] difference(int[] firstNumber, int[] secondNumber) {
         if (!biggerNumber(firstNumber, secondNumber))
-            return differenz(secondNumber, firstNumber);
+            return difference(secondNumber, firstNumber);
         int[] diff = new int[firstNumber.length];
         int borrow = 0;
         for (int i = firstNumber.length - 1; i >= 0; i--) {
@@ -44,7 +44,7 @@ public class Big {
         return diff;
     }
 
-    public static int[] multiplikation(int[] number, int multiplier) {
+    public static int[] multiplication(int[] number, int multiplier) {
         int[] mult = new int[number.length + 1];
         int carry = 0;
         for (int i = number.length - 1; i >= 0; i--) {
