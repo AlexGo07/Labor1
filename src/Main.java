@@ -9,12 +9,17 @@ public class Main {
             System.out.print(badGrade + " ");
         }
         System.out.println();
-        System.out.print("Durchschnitt: ");
-        System.out.println(University.average(grades));
+        //System.out.print("Durchschnitt: ");
+        //System.out.println(University.average(grades));
         System.out.print("abgerundete Noten: ");
         int[] roundedGrades = University.roundGrades(grades);
         for (int roundedGrade : roundedGrades) {
             System.out.print(roundedGrade + " ");
+        }
+        System.out.println();
+        int[] insufficientRoundGrades = University.insufficient(roundedGrades);
+        for (int roundGrade : insufficientRoundGrades) {
+            System.out.print(roundGrade + " ");
         }
         System.out.println();
         System.out.print("Die hochste Note nach Aufrundung: ");

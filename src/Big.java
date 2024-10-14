@@ -30,14 +30,14 @@ public class Big {
         if (!biggerNumber(firstNumber, secondNumber))
             return difference(secondNumber, firstNumber);
         int[] diff = new int[firstNumber.length];
-        int borrow = 0;
+        int carry = 0;
         for (int i = firstNumber.length - 1; i >= 0; i--) {
-            int initialDiff = firstNumber[i] - secondNumber[i] - borrow;
+            int initialDiff = firstNumber[i] - secondNumber[i] - carry;
             if (initialDiff < 0) {
                 initialDiff += 10;
-                borrow = 1;
+                carry = 1;
             } else {
-                borrow = 0;
+                carry = 0;
             }
             diff[i] = initialDiff;
         }
